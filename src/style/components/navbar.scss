@@ -1,0 +1,111 @@
+.component-navbar {
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+
+    .nav-logo {
+      margin-right: 20px;
+      @media screen and (max-width: 786px) {
+        margin-right: 0;
+      }
+      img {
+        width: 80px;
+      }
+    }
+
+    .nav-links {
+      color: #ffffff;
+      border-left: 2px solid rgba(95, 117, 193, 0.24);
+      .nav-items {
+        margin-left: 15px;
+        font-weight: 700;
+
+        &:hover {
+          border-bottom: 1px solid #0ff;
+        }
+      }
+
+      @media screen and (max-width: 786px) {
+        display: none;
+      }
+    }
+
+    .connect-wallet-btn {
+      color: #ffffff;
+      border: none;
+      text-transform: capitalize;
+      width: 200px;
+      font-weight: 500;
+      padding: 16px;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+      border: 1px solid #c69217;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
+      font-size: 20px;
+      @media screen and (max-width: 400px) {
+        margin-left: 0;
+      }
+      background: linear-gradient(to right, #c69117, #ffd574);
+
+      &:hover {
+        background: linear-gradient(to right, #ffd574, #c69117);
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        width: 150px;
+        display: block;
+      }
+      @media screen and (max-width: 602px) {
+        width: 30%;
+        min-width: 150px;
+        position: absolute;
+        right:5%;
+        top:100px;
+      }
+
+    }
+    .component-social-icons {
+      @media screen and (max-width: 400px) {
+        display: none;
+      }
+    }
+  }
+
+  .sidebar {
+    position: fixed;
+    background-color: #12062b;
+    top: 100px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    transform-origin: top center;
+    transform: scaleY(0);
+    transition: all 0.5s;
+    font-size: 32px;
+    z-index: 99;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      margin-bottom: 20px;
+    }
+    .mint-btn {
+      margin-left: 0;
+    }
+
+    @media screen and (min-width: 986px) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,53 @@
+@import "./style/index.scss";
+
+.flex {
+  display: flex;
+}
+
+.sm-wrap {
+  @media screen and (max-width: 420px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > div {
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.flex-1 {
+  flex-grow: 1;
+}

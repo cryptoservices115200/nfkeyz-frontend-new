@@ -1,0 +1,11 @@
+.component-title {
+  font-family: "Dela Gothic One", cursive;
+  font-size: 42px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 3px;
+
+  @media screen and (max-width: 475px) {
+    font-size: 30px;
+  }
+}

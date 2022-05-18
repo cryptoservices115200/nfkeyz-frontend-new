@@ -1,0 +1,14 @@
+.component-social-icons {
+  a {
+    margin-right: 10px;
+    cursor: pointer;
+    path {
+      transition: all 0.4s;
+    }
+    &:hover {
+      path {
+        fill: #c69117;
+      }
+    }
+  }
+}
