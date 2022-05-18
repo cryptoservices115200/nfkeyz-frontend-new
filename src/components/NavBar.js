@@ -77,12 +77,12 @@ const NavBar = ({ user, setUser }) => {
               showConnectButton={() => showConnectButton()}
             />
           {/*) : (*/}
-            <button
+            {/* <button
               className="connect-wallet-btn"
               onClick={handleConnectWallet}
             >
               {active ? humanReadableAccount(account) : "Connect Wallet"}
-            </button>
+            </button> */}
           {/*)}*/}
         </div>
         {/* <div
