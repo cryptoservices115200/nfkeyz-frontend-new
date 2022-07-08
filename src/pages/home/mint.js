@@ -241,4 +241,5 @@ const MintSection = ({user}) => {
     } else return <></>;
 };
 
+
 export default MintSection;
